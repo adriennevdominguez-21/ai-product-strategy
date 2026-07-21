@@ -21,13 +21,13 @@
 
 **What we're building, for whom, why now.**
 
-- **Product:**
-- **AI Value Archetype:**
-- **Vulnerability Scores:** Moat __/5 · Data __/5 · Platform __/5
-- **Top Risk:**
-- **Confidence:** H / M / L
-- **Prototype:** [link]
-- **Kill Criteria:**
+- **Product:** Attendance Insight
+- **AI Value Archetype:** Oracle
+- **Vulnerability Scores:** Moat 4/5 · Data 4/5 · Platform 2/5
+- **Top Risk:** Established Student Information System vendors like PowerSchool could integrate similar AI capabilities directly into their existing platforms, reducing the need for a standalone solution.
+- **Confidence:** M (Medium)
+- **Prototype:** [(https://k12-attend-ai.lovable.app/)]
+- **Kill Criteria:** Discontinue investment if the AI cannot accurately identify at-risk students or if educators do not consistently adopt its recommendations because they fail to improve attendance outcomes.
 
 → Details: [`01-the-bet/`](01-the-bet/)
 
