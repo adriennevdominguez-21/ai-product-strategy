@@ -1,7 +1,7 @@
 # Three-Axis Vulnerability Diagnostic
 
 ## Product
-<!-- Name the product you're diagnosing. Real product at your company — not a hypothetical. -->
+Student Attendance Platform
 
 **Product:**
 **Your Role:**
