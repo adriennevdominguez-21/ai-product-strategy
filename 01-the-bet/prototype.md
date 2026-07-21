@@ -1,19 +1,19 @@
 # The Prototype Bet
 
 ## What I Built
-<!-- One sentence: what does this prototype demonstrate? -->
+This prototype demonstrates an AI-driven decision-support platform that enables school leaders to proactively identify attendance risks, prioritize interventions, and improve district-wide student outcomes.
 
 ## Tool Used
-<!-- v0 / Cursor / Lovable / other -->
+Lovable
 
 ## Prototype Link
-<!-- Paste the shareable URL -->
+(https://k12-attend-ai.lovable.app/)
 
 ## AI Value Archetype
-<!-- Automator / Copilot / Oracle / Creator / Orchestrator -->
+Oracle – Attendance Insight uses AI to analyze attendance and related student data to predict attendance risks, identify emerging trends, and recommend timely interventions that help educators make better decisions.
 
 ## The Bet in One Sentence
-<!-- What you're building, for whom, why now -->
+We are building an AI-powered attendance intelligence platform for K–12 school leaders that transforms attendance data into proactive insights and recommendations, enabling earlier interventions to improve student outcomes.
 
 ## Kill Criteria
-<!-- When would you stop? What evidence would kill this bet? -->
+We would stop investing in this product if the AI consistently fails to improve the accuracy of identifying at-risk students, does not lead to measurable improvements in attendance or intervention outcomes, or if users do not trust or adopt the AI recommendations despite iterative improvements.
