@@ -8,6 +8,7 @@ An AI-powered decision support platform that helps educators identify attendance
 
 **Your Role:**
 I am responsible for defining the AI product strategy, prioritizing investments, and ensuring Attendance Insight delivers measurable value to educators, students, and school districts.
+
 ---
 
 ## Scores
@@ -20,6 +21,7 @@ Attendance Insight has several layers of context that are difficult for competit
 
 **Named attacker (from partner challenge):**
 PowerSchool
+
 ---
 
 ### Data Advantage — 4/5
@@ -30,6 +32,7 @@ Attendance Insight benefits from rich, longitudinal student and operational data
 
 **Named attacker (from partner challenge):**
 PowerSchool
+
 ---
 
 ### Platform Exposure — 2/5
@@ -40,6 +43,7 @@ AI-powered attendance insights could be incorporated into existing Student Infor
 
 **Named attacker (from partner challenge):**
 PowerSchool
+
 ---
 
 ## Top Vulnerability
