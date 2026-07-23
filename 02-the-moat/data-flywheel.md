@@ -54,22 +54,31 @@ Develop a privacy-preserving federated learning or benchmarking capability that 
 ## Encroachment Threat Assessment
 
 ### 1. Platform Encroachment
-**Attacker:**
-**Vector:**
-**Time-to-threat:**
-**% of value at risk:**
+**Attacker:** PowerSchool
+
+**Vector:** Integrates AI-powered attendance risk prediction, intervention recommendations, and district analytics directly into its existing Student Information System, eliminating the need for a standalone solution.
+
+**Time-to-threat:** 12–24 months
+
+**% of value at risk:** 70%
 
 ### 2. Vertical Competitor
-**Attacker:**
-**Vector:**
-**Time-to-threat:**
-**% of value at risk:**
+**Attacker:** EveryDay Labs
+
+**Vector:** Expands its attendance intervention platform with more advanced predictive AI, personalized outreach, and evidence-based intervention recommendations focused exclusively on reducing chronic absenteeism.
+
+**Time-to-threat:** 6–12 months
+
+**% of value at risk:** 50%
 
 ### 3. Adjacent Expansion
-**Attacker:**
-**Vector:**
-**Time-to-threat:**
-**% of value at risk:**
+**Attacker:** Frontline Education
+
+**Vector:** Adds AI-driven attendance insights and intervention recommendations to its student management, analytics, and administrative workflow products, leveraging existing district relationships to drive adoption.
+
+**Time-to-threat:** 12–18 months
+
+**% of value at risk:** 40%
 
 ---
 
@@ -77,9 +86,14 @@ Develop a privacy-preserving federated learning or benchmarking capability that 
 
 *Your partner played the Big Tech attacker. What was their plan to kill you?*
 
-**Attacker:**
-**Attack vector (target the weakest loop):**
-**Weeks 1-4 - what they ship:**
-**Weeks 5-8 - how they poach users:**
-**Weeks 9-12 - why users don't come back:**
-**Your defense:**
+**Attacker:** PowerSchool
+
+**Attack vector (target the weakest loop):** Launch a privacy-preserving, federated AI model that learns from anonymized attendance patterns across participating districts without exposing student data, turning Attendance Insight's siloed data into PowerSchool's competitive advantage.
+
+**Weeks 1-4 - what they ship:** Release AI-powered attendance risk prediction, intervention recommendations, and district benchmarking trained on anonymized data from thousands of schools while ensuring no student-level data leaves a district.
+
+**Weeks 5-8 - how they poach users:** Offer the new AI capabilities at no additional cost to existing PowerSchool customers, emphasizing that districts benefit from insights learned across the network while maintaining FERPA compliance and data privacy.
+
+**Weeks 9-12 - why users don't come back:** Districts begin receiving more accurate predictions and stronger intervention recommendations because the AI continuously learns from cross-district outcomes, making Attendance Insight's siloed models appear less effective over time.
+
+**Your defense:** Build a privacy-preserving federated learning network that allows districts to securely contribute anonymized outcomes, while differentiating through explainable AI, configurable intervention workflows, and district-specific policy intelligence that delivers both network-wide and local insights.
