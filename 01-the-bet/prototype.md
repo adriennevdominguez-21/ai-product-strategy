@@ -7,7 +7,7 @@ This prototype demonstrates an AI-driven decision-support platform that enables 
 Lovable
 
 ## Prototype Link
-(https://k12-attend-ai.lovable.app/)
+[View the prototype](https://k12-attend-ai.lovable.app/)
 
 ## AI Value Archetype
 Oracle – Attendance Insight uses AI to analyze attendance and related student data to predict attendance risks, identify emerging trends, and recommend timely interventions that help educators make better decisions.
