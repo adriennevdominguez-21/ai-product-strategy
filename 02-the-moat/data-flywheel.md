@@ -40,12 +40,15 @@ Anonymized intervention outcomes, attendance trends, and educator feedback from 
 **How it compounds:**
 As more districts contribute data, the AI identifies broader attendance patterns and more effective intervention strategies, though privacy requirements and district-specific policies limit how much knowledge can be shared across organizations.
 
-**Total Flywheel Score: 16/20**
-**Weakest Loop:**
-Network Loop (3/5)
+### Total Flywheel Score
+**16/20**
 
-**Fix for weakest loop:**
+### Weakest Loop
+**Network Loop (3/5)**
+
+### Fix for Weakest Loop
 Develop a privacy-preserving federated learning or benchmarking capability that allows districts to contribute anonymized outcomes and best practices, enabling the AI to learn from cross-district patterns without exposing sensitive student data.
+
 ---
 
 ## Encroachment Threat Assessment
