@@ -67,7 +67,19 @@
 
 **Proposed AI pricing:** AI Premium add-on that includes predictive attendance intelligence, intervention recommendations, and district benchmarking.
 
-**Model:** **Hybrid (district subscription + per-user AI licensing)**
+| Pricing Component | Value |
+|-------------------|-------|
+| **Strategy Posture** | **Maximize** – Optimize revenue by pricing for measurable district value while keeping AI costs aligned with usage. |
+| **Pricing Model** | **Hybrid (Platform Fee + Metered AI Work)** |
+| **Unit of Work Metered** | AI requests (predictions, recommendations, explanations, and copilot interactions) |
+| **Base Fee** | **$45 per user/month platform subscription** |
+| **Price per Unit** | **$0.03 per AI request** |
+| **Estimated Units/User/Month** | **500 AI requests** |
+| **Implied Revenue/User/Month** | **$60.00** |
+
+### Decision Note
+
+Attendance Insight delivers continuous value through attendance dashboards, reporting, and workflow management, which are covered by the platform subscription. AI-powered capabilities—including predictive risk analysis, intervention recommendations, explainable AI, and district benchmarking—are metered based on usage. This hybrid pricing model aligns revenue with the cost of delivering AI while giving districts predictable platform pricing and the flexibility to scale AI usage as adoption grows.
 
 ---
 
