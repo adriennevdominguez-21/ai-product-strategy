@@ -46,6 +46,15 @@
 
 **Frontier model:** GPT-5 (or equivalent frontier reasoning model)
 
+| Feature | Complexity | Model Tier | Cost / Req | Volume % | Weighted $ |
+|---------|------------|------------|-----------:|---------:|-----------:|
+| Attendance summaries | Low | GPT-4.1 Mini | $0.002 | 35% | $0.0007 |
+| Dashboard explanations | Low | GPT-4.1 Mini | $0.002 | 25% | $0.0005 |
+| Attendance Q&A (Copilot) | Medium | GPT-4.1 Mini | $0.004 | 20% | $0.0008 |
+| Risk prediction & intervention recommendations | High | GPT-5 | $0.020 | 15% | $0.0030 |
+| Explainable AI & district benchmarking | Very High | GPT-5 | $0.030 | 5% | $0.0015 |
+| **Blended Average** | — | **Hybrid** | — | **100%** | **$0.0065 / request** |
+
 **Routing rule:** Route summaries, search, FAQs, and dashboard explanations to the triage model. Escalate only complex attendance risk analysis, intervention recommendations, and explainable AI requests to the frontier model.
 
 **Expected cascade ratio:** **80% triage / 20% frontier**
