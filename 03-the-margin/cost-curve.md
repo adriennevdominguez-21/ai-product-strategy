@@ -95,14 +95,33 @@ Attendance Insight delivers continuous value through attendance dashboards, repo
 
 ## Board One-Pager
 
-**Before (traditional SaaS):**
+### Before (Traditional SaaS)
 
-Districts purchase attendance dashboards and reporting tools that help educators monitor attendance after problems occur.
+| Metric | Value |
+|--------|------:|
+| Revenue | **$45/user/month × 1 seat = $45.00** |
+| COGS | **$16.00** (fixed infrastructure, storage, and support) |
+| **Gross Margin** | **64%** |
 
-**After (AI-enabled):**
+---
 
-Districts subscribe to an AI-powered attendance intelligence platform that predicts attendance risk, recommends evidence-based interventions, and continuously improves through educator feedback and privacy-preserving learning.
+### After (AI-Powered)
 
-**Net margin shift:**
+| Metric | Value |
+|--------|------:|
+| Revenue | **$45.00 platform fee + ($0.03 × 500 AI requests) = $60.00/user/month** |
+| COGS | **$19.00** (variable AI inference + infrastructure + data + human oversight) |
+| **Gross Margin** | **68%** |
 
-AI introduces additional inference costs that modestly reduce gross margins, but premium pricing, stronger customer retention, improved student outcomes, and differentiated AI capabilities increase long-term customer lifetime value and overall profitability.
+---
+
+## Net Margin Shift
+
+| Metric | Value |
+|--------|------:|
+| **Δ Margin %** | **+4 percentage points** |
+| **Δ Gross Profit** | **+$11.00 per user/month** |
+
+### Narrative
+
+Attendance Insight transitions from a traditional reporting platform to an AI-powered decision support system. While AI introduces variable inference costs, those costs are more than offset by higher recurring revenue through a platform fee plus metered AI work. The hybrid pricing model increases revenue per user from **$45 to $60 per month**, improves gross profit from **$29 to $41 per user**, and strengthens long-term net revenue retention by giving districts additional AI capabilities that expand with adoption.
