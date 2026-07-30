@@ -106,13 +106,25 @@
 
 ## Confidence UX Design
 
-**Approach:** show uncertainty / tiered confidence / human-in-loop trigger
+## Confidence UX Design
 
-**High confidence (>90%):**
-**Medium confidence (70-90%):**
-**Low confidence (<70%):**
+**Approach:** Attendance Insight combines tiered confidence, visible uncertainty, and human-in-the-loop review so educators can understand how reliable each recommendation is and remain responsible for final intervention decisions.
 
-**User control surface:**
+**Confident (>90%):** Generates a risk classification, explains the strongest contributing factors, and recommends a prioritized intervention.
+
+**Uncertain (50-90%):** Provides a provisional risk assessment and presents multiple possible explanations or interventions. Shows visible uncertainty, missing or conflicting factors, and a prompt to review the recommendation.
+
+**Not confident (<50%):** Avoids making a definitive prediction or automatically recommending a high-impact action. Provides low-confidence warning, explanation of why confidence is limited, and the data needed to improve the assessment.
+
+**User control surface:** 
+
+Accept, modify, or dismiss the recommendation; assign an intervention;
+
+- Users see AI reasoning / drivers
+- Users correct & override outputs
+- Corrections feed back into the model / dataset
+- Users adjust the confidence threshold _(not yet)_
+
 
 ## Reliability Contract
 
