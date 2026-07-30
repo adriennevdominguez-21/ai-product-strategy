@@ -2,16 +2,107 @@
 
 ## Golden Dataset Spec
 
-| # | Input | Expected Output | Edge Case? | Judge Type |
-|---|-------|----------------|-----------|-----------|
-| 1 | | | Y/N | rule / LLM |
-| 2 | | | Y/N | rule / LLM |
-| 3 | | | Y/N | rule / LLM |
-| 4 | | | Y/N | rule / LLM |
-| 5 | | | Y/N | rule / LLM |
+## Test Cases
 
-**Adversarial rows included:** __
+### 1. High-Risk Student
+
+- **Edge Case:** No
+- **Judge:** Rule + LLM
+
+**Input**
+
+> Student has **12 absences**, attendance declined from **96% to 82%** over 6 weeks, declining grades, and no prior interventions.
+
+**Expected Output**
+
+> High attendance risk. Recommend immediate outreach, parent conference, an attendance improvement plan, and counselor referral. Explain the factors contributing to the prediction.
+
+---
+
+### 2. Improving Student
+
+- **Edge Case:** No
+- **Judge:** Rule + LLM
+
+**Input**
+
+> Student has **4 absences**, attendance is improving, grades remain above 90%, and previous family outreach was successful.
+
+**Expected Output**
+
+> Low attendance risk. Recommend continued monitoring only and avoid unnecessary intervention.
+
+---
+
+### 3. School-Level Trend
+
+- **Edge Case:** No
+- **Judge:** Rule + LLM
+
+**Input**
+
+> School's chronic absenteeism rate increased from **18% to 24%** compared to last semester.
+
+**Expected Output**
+
+> Flag a school-level attendance concern, identify key trends, and recommend targeted interventions for high-risk student groups.
+
+---
+
+### 4. Limited Historical Data
+
+- **Edge Case:** Yes
+- **Judge:** Rule + LLM
+
+**Input**
+
+> Student transferred into the district last week with only **three days of attendance history**.
+
+**Expected Output**
+
+> Indicate there is insufficient data for a reliable prediction. Recommend monitoring until additional attendance history is available.
+
+---
+
+### 5. Conflicting Data
+
+- **Edge Case:** Yes
+- **Judge:** Rule
+
+**Input**
+
+> Attendance records contain conflicting duplicate entries from two source systems.
+
+**Expected Output**
+
+> Detect the data quality issue, avoid generating a confidence score, and recommend data validation before any intervention.
+
+---
+
+## Dataset Health
+
+| Metric | Value |
+|---------|------:|
+| **Total Test Cases** | **5** |
+| **Edge Cases** | **2 (40%)** |
+| **Rule Only** | **20%** |
+| **LLM Only** | **0%** |
+| **Rule + LLM** | **80%** |
+
+
+**Adversarial rows included:** 2
+
 **Coverage gaps identified by partner:**
+- Students with excused vs. unexcused absences.
+- Seasonal attendance patterns (e.g., flu outbreaks, weather closures).
+- Students receiving special education or Section 504 accommodations.
+- English learner and multilingual family communication scenarios.
+- Bias evaluation across demographic groups.
+- Missing or delayed SIS data feeds.
+- Multiple interventions with conflicting outcomes.
+- District policy differences for chronic absenteeism thresholds.
+- False positives where attendance improves without intervention.
+- Confidence calibration for low-data or ambiguous cases.
 
 ## Confidence UX Design
 
