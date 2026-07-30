@@ -128,15 +128,24 @@ Accept, modify, or dismiss the recommendation; assign an intervention;
 
 ## Reliability Contract
 
+
+## Reliability Contract
+
 | Metric | Target | Measurement | Alert Threshold |
 |--------|--------|-------------|-----------------|
-| Accuracy | | | |
-| Hallucination rate | | | |
-| Latency (p95) | | | |
-| Drift velocity | | | |
+| Accuracy | 90% | Weekly evaluation using a dataset of 300 golden test cases (including adversarial examples), scored with rule-based validation and LLM-as-a-judge. Ship only if overall accuracy is ≥90% and no critical safety tests fail. | <85% → trigger gold-set audit |
+| Hallucination rate | <1% | eekly evaluation on 300 golden test cases using Rule + LLM-as-a-judge to identify unsupported or fabricated claims. | >3% → auto-rollback to last good model |
+| Latency (p95) | <2s | Monitor median response time weekly across production requests. | > 5s → page on-call |
+| Drift velocity | <0.5%/4w | Weekly monitoring of production data against the training dataset using drift detection metrics. | >2%/4w → trigger gold-set audit |
 
 ## HITL Architecture
-<!-- When does a human step in? What's the escalation path? -->
+
+**Trigger:** Human review is triggered for predictions with confidence below 60% or any high-impact student intervention recommendation.
+
+**Reviewer:** The school's attendance coordinator or counselor, with district administrators reviewing school-level trends and recommendations.
+
+**Feedback loop:** Reviewer corrections are added to the gold set and used during future evaluations and model retraining.
+
 
 ## Red-Team Findings
 *What failure mode did your partner find that you missed?*
