@@ -7,8 +7,9 @@
 | Cross-Domain Transfer | Attendance history combined with grades, behavior incidents, enrollment data, demographics, intervention history, school-level trends, and district attendance policies. | More contextual risk assessments, identification of relationships across student outcomes, improved recommendations across schools and grade levels, and earlier detection of emerging attendance risks. | Y | active |
 | Network Intelligence | Privacy-preserving and anonymized attendance patterns, intervention outcomes, benchmarks, and educator feedback contributed by multiple districts. | anonymized attendance patterns, intervention outcomes, benchmarks, and educator feedback contributed by multiple districts.Cross-district benchmarks, broader pattern recognition, identification of effective interventions across comparable student populations, and improved predictions for every participating district. | Y | broken |
 
-**Broken loop identified by partner:** ·
-**Fix plan:** ·
+**Broken loop identified by partner:** Network intelligence—attendance patterns and intervention outcomes are collected across districts but are not fed into a centralized, privacy-preserving intelligence layer.
+
+**Fix plan:** Develop FERPA-compliant federated learning and anonymized benchmarking so cross-district outcomes can improve predictions and intervention recommendations without exposing identifiable student data.
 
 ## Context Connectivity
 <!-- How does knowledge flow across teams and domains? Where does it silo? -->
