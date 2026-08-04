@@ -54,12 +54,39 @@ _Not shipping agents this version._
 
 ## Shadow AI Audit
 
-| Tool | Owner | Risk Level | Decision |
-|------|-------|-----------|----------|
-| | | H / M / L | keep / govern / kill |
-| | | H / M / L | keep / govern / kill |
-| | | H / M / L | keep / govern / kill |
+| Workaround | Signal Source | Signal Type | Frequency | Spend ($/mo) | Decision |
+|---|---|---|---|---:|---|
+| Exporting attendance data into general-purpose AI tools to create student and school summaries | User interview | Capability gap | H | $100/mo | Build |
+| Using Zapier or Make to send risk alerts and intervention reminders through email or team messaging | Zapier/Make | Workflow gap | H | $100/mo | Partner |
+| Building custom dashboards and risk models through the Attendance Insight API | API pattern | Capability gap | M | $1,000/mo | Build |
+| Using external translation AI to draft multilingual family outreach | Support ticket | Capability gap | M | $200/mo | Partner |
+| Creating independent chatbots that answer general attendance-policy questions | Sales call | Pricing gap | L | $100/mo | Ignore |
 
-**Total tools found:**
-**Tools after triage:**
-**Estimated hidden spend:**
+## Pattern Assessment
+- Workarounds found: 5
+- Build candidates: 2
+- Partner candidates: 2
+- Ignore decisions: 1
+- Adjacent spend: $1500/mo
+- Dominant signal: Capability gap
+
+## Action Plan
+### Build
+Attendance Insight should absorb secure AI-generated attendance summaries, configurable dashboards and risk models, and automated risk alerts and intervention reminders directly into the product. These are frequent, core workflow needs involving sensitive student data, so native capabilities provide stronger FERPA controls, consistent quality, and a better user experience than external workarounds.
+
+### Partner
+Attendance Insight should officially integrate with approved workflow-automation tools such as Zapier for sending alerts and intervention reminders through district-authorized communication channels. It should also integrate with a vetted, education-focused translation provider for multilingual family outreach, with human review required before messages are sent.
+
+### Ignore + Monitor
+Attendance Insight can allow users to continue using external tools for general attendance-policy research, presentation creation, and analysis of fully anonymized, non-student-specific data. Users should not export identifiable student records, intervention notes, or sensitive accommodation information to unapproved AI tools.
+
+## Roadmap Brief
+Based on your audit: 5 user-side workarounds discovered.
+Decisions: 2 build · 2 partner · 1 ignore · 0 TBD.
+Estimated adjacent spend: $1500/mo across surveyed users.
+Dominant signal: Capability gap.
+
+Recommended next step: Capability gaps dominate, users want something your product does not do. Strongest near-term move is building one or two of these natively before a competitor does.
+
+Sequence the Build column by frequency × strategic relevance. Confirm Partner candidates with the external tools' partnership teams. Re-run this audit each quarter, workarounds shift fast.
+
