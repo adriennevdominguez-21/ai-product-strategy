@@ -35,20 +35,22 @@
 | Optimize interventions using anonymized cross-district outcomes | Demonstrate a statistically meaningful improvement in recommendation effectiveness over district-only models | L |
 
 ## Board Pitch
-
-**Thesis (1 sentence):** Attendance Insight transforms fragmented K–12 attendance data into explainable, actionable intelligence that helps educators identify risk earlier, select timely interventions, and improve measurable student outcomes while keeping humans responsible for consequential decisions.
+**Thesis (1 sentence):**
+Attendance Insight helps K–12 leaders identify attendance risk earlier and take more effective, accountable action before students become chronically absent.
 
 **The case:**
-1. Why now: Chronic absenteeism requires earlier and more targeted intervention, while districts now have the data and AI capabilities needed to move from retrospective reporting to proactive decision support.
-2. What's defensible: District-specific policy intelligence, deeply integrated intervention workflows, educator feedback, longitudinal outcomes, and a future privacy-preserving learning network create context and switching costs that general AI tools cannot easily replicate.
-3. The economics: A $45 per-user platform fee plus $0.03 per AI request produces an estimated $60 in monthly revenue against $19 in monthly COGS, increasing gross margin from 64% to 68% and gross profit by $11 per user per month.
+1. Why now: The prototype is complete enough to test with districts, but our advantage window is limited: PowerSchool could bundle comparable attendance predictions and recommendations into its existing platform within 12–24 months. We need fall pilots to determine whether Attendance Insight produces better decisions and outcomes before committing to broader scale.
+2. What's defensible: The defensible asset is not the prediction alone; it is the combination of district-specific attendance policies, embedded intervention workflows, educator corrections, and longitudinal intervention outcomes. Those signals can improve recommendations within each district, while cross-district benchmarking remains an unproven future advantage rather than a moat we can claim today.
+3. The economics: At the expected usage level, the model produces $60 in monthly revenue per user against $19 in COGS, increasing projected gross margin from 64% to 68% and gross profit by $11 per user per month. Those economics depend on unvalidated usage and willingness-to-pay assumptions, so the first three district pilots must test pricing and 10x-usage sensitivity before we scale.
 
 **The risks:**
-1. Trust / failure modes: Inaccurate classifications—particularly those that fail to distinguish excused, medical, disability-related, and unexcused absences—could harm students and undermine educator trust.
-2. Scale / governance: Data quality, demographic performance, model drift, privacy obligations, and unauthorized use of external AI tools could weaken reliability as adoption grows.
-3. Competitive: PowerSchool could bundle similar AI capabilities into its SIS and use its larger district network to develop stronger cross-district intelligence.
+1. Trust / failure modes: The unacceptable failure is incorrectly labeling a student as high risk because the system treats an excused, medical, or disability-related absence like an unexcused absence, leading to an inappropriate intervention. We mitigate that with absence-specific safety tests, visible confidence, blocked scoring when data conflicts, mandatory human approval for consequential actions, and a 300-case evaluation set that must reach at least 90% accuracy with no critical safety failures before release.
+2. Scale / governance: At 10x usage, inference costs, data-quality failures, human-review volume, model drift, and privacy exposure all increase; the cross-district learning loop is also currently broken. We will control scale through lower-cost routing for routine work, explicit escalation triggers, role-based access, weekly reliability reviews, quarterly governance audits, and no autonomous disciplinary, legal, enrollment, or accommodation decisions.
+3. Competitive: The forcing scenario is PowerSchool offering comparable capabilities at no additional cost while learning from a larger district network. If our pilots do not demonstrate more accurate risk identification, meaningful educator adoption, improved intervention completion, measurable attendance impact, and willingness to pay, we stop expansion rather than fund a feature an incumbent can bundle.
 
-**The ask:** Approve a gated 90-day pilot with two to three districts and fund the 300-case golden dataset, reliability monitoring, SIS integration, and human-approval workflows; authorize Horizon 2 only if the pilot meets defined accuracy, adoption, intervention, attendance-outcome, and willingness-to-pay thresholds.
+**The ask:**
+Approve $1.8 million and eight dedicated employees for 12 months, with a 90-day release gate, to complete the reliability foundation, integrate district data, and run pilots with two to three districts. The team will include one product manager, two ML engineers or data scientists, two full-stack engineers, one data-integration engineer, one MLOps and security engineer, and one education implementation and research lead. Funding this means pausing native multilingual outreach and other non-core chatbot or custom-dashboard work, using partners where necessary, and withholding investment in federated learning until the pilots validate outcomes and demand.
+
 
 ## M1 Baseline vs. Now
 *Your 3-sentence AI strategy from Module 1 vs. what you'd say now:*
