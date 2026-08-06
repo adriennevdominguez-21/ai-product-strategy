@@ -31,12 +31,12 @@
 
 | Cost Category | Per-User/Month | Notes |
 |--------------|---------------:|-------|
-| Inference (primary model) | **$2.40** | Complex attendance risk prediction, explainability, and intervention recommendations |
-| Inference (cascading/triage) | **$0.60** | Dashboard summaries, chatbot responses, and simple requests handled by a lower-cost model |
+| Inference (primary model) | **$2.25** | Complex attendance risk prediction, explainability, and intervention recommendations |
+| Inference (cascading/triage) | **$1.00** | Dashboard summaries, chatbot responses, and simple requests handled by a lower-cost model |
 | Infrastructure | **$10.00** | Cloud hosting, monitoring, APIs, networking, and security |
 | Data/storage | **$4.00** | Secure student data storage, analytics warehouse, backups, and encryption |
 | Human-in-the-loop | **$2.00** | Model evaluation, prompt tuning, QA, and customer support |
-| **Total AI COGS** | **$19.00** | Estimated monthly operating cost per active user |
+| **Total AI COGS** | **$19.25** | Estimated monthly operating cost per active user |
 
 ---
 
