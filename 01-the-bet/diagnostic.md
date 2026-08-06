@@ -48,6 +48,8 @@ PowerSchool
 
 ## Top Vulnerability
 <!-- One line: what's the single biggest strategic risk? -->
+Platform Exposure — PowerSchool could bundle the core capability
 
 ## Confidence Level
 <!-- H / M / L — how confident are you in this bet after the diagnostic? -->
+Medium
