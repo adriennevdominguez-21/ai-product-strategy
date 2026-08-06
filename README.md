@@ -98,7 +98,7 @@ Your defense: Build a privacy-preserving federated learning network that allows 
 | **Δ Gross Profit** | **+$11.75 per user/month** |
 
 - **Break-even at:**
-- 100 AI requests per user per month.
+- 128 AI requests per user per month.
 
 → Details: [`03-the-margin/`](03-the-margin/)
 
