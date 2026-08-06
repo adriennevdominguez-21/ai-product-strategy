@@ -110,7 +110,8 @@ Attendance Insight delivers continuous value through attendance dashboards, repo
 | Metric | Value |
 |--------|------:|
 | Revenue | **$45.00 platform fee + ($0.03 × 500 AI requests) = $60.00/user/month** |
-| COGS | **$19.00** (variable AI inference + infrastructure + data + human oversight) |
+| COGS | **$19.25** |
+| **Gross Profit** | **$40.75** |
 | **Gross Margin** | **68%** |
 
 ---
@@ -120,7 +121,7 @@ Attendance Insight delivers continuous value through attendance dashboards, repo
 | Metric | Value |
 |--------|------:|
 | **Δ Margin %** | **+4 percentage points** |
-| **Δ Gross Profit** | **+$11.00 per user/month** |
+| **Δ Gross Profit** | **+$11.75 per user/month** |
 
 ### Narrative
 
