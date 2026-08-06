@@ -90,15 +90,16 @@ Your defense: Build a privacy-preserving federated learning network that allows 
 - **Pricing Today → Tomorrow:** Enterprise SaaS subscription licensed annually by school district. → AI Premium add-on that includes predictive attendance intelligence, intervention recommendations, and district benchmarking.
 - **Total AI COGS / unit:** $19.25
 - **Cascading Strategy:** Triage: GPT-4.1 Mini (or equivalent low-cost model); frontier: GPT-5 (or equivalent frontier reasoning model); ratio **80% triage / 20% frontier**
+  
 - **Net Margin Shift:**
-- 
+
 | Metric | Value |
 |--------|------:|
 | **Δ Margin %** | **+4 percentage points** |
 | **Δ Gross Profit** | **+$11.75 per user/month** |
 
 - **Break-even at:**
-- 128 AI requests per user per month.
+- Approximately 128 AI requests per user per month, assuming $3.00 in fixed monthly AI costs and a $0.0065 variable cost per request.
 
 → Details: [`03-the-margin/`](03-the-margin/)
 
@@ -118,8 +119,7 @@ Your defense: Build a privacy-preserving federated learning network that allows 
 | Drift velocity | <0.5%/4w | Weekly monitoring of production data against the training dataset using drift detection metrics. | >2%/4w → trigger gold-set audit |
 
 - **Golden Dataset:** 5 rows, 2 adversarial
-- **Confidence UX:**
-**Approach:** Attendance Insight combines tiered confidence, visible uncertainty, and human-in-the-loop review so educators can understand how reliable each recommendation is and remain responsible for final intervention decisions.
+- **Confidence UX:** Attendance Insight combines tiered confidence, visible uncertainty, and human-in-the-loop review so educators can understand the reliability of each recommendation and remain responsible for final intervention decisions.
 
 **Confident (>90%):** Generates a risk classification, explains the strongest contributing factors, and recommends a prioritized intervention.
 
@@ -135,7 +135,6 @@ Accept, modify, or dismiss the recommendation; assign an intervention;
 - Users correct & override outputs
 - Corrections feed back into the model / dataset
 - Users adjust the confidence threshold _(not yet)_
-- 
 - **HITL Architecture:** **Trigger:** Human review is triggered for predictions with confidence below 60% or any high-impact student intervention recommendation.
 - **Failure Mode Coverage:** *What failure mode did your partner find that you missed?*
 - My partner found that Attendance Insight could treat excused and unexcused absences the same, causing students with legitimate medical, disability-related, or approved absences to be incorrectly classified as high risk. Our original golden dataset missed this failure because it tested absence counts without including absence type or accommodation context.
