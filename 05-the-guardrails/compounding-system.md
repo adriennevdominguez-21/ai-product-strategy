@@ -45,7 +45,7 @@ Quarterly, Overall student impact, FERPA compliance, vendor risk, security contr
 
 Quarterly, Shadow AI audit to review whether staff paste attendance records, student PII, intervention notes into external AI tools. Unapproved models, browser extensions, personal accounts and exported datasets. Any incidents involving unauthorized disclosure, inaccurate recommendations, or actions taken without human approval. 
 
-**Regulatory exposure (EU AI Act / other):** FERPA, COPPA, State student-privacy laws, Title VI and Title IX, Section 504, ADA, and IDEA. Risk tier: high. Controls: Attendance Insight uses role-based access, encryption, audit logs, data minimization, retention limits, vendor controls, and FERPA-compliant handling of student records. It also requires human approval for consequential decisions, monitors accuracy and demographic performance, supports corrections and appeals, and prohibits fully automated disciplinary, legal, enrollment, or accommodation decisions..
+**Regulatory exposure (EU AI Act / other):** FERPA, COPPA, State student-privacy laws, Title VI and Title IX, Section 504, ADA, and IDEA. Risk tier: high. Controls: Attendance Insight uses role-based access, encryption, audit logs, data minimization, retention limits, vendor controls, and FERPA-compliant handling of student records. It also requires human approval for consequential decisions, monitors accuracy and demographic performance, supports corrections and appeals, and prohibits fully automated disciplinary, legal, enrollment, or accommodation decisions.
 
 ## Agent Topology
 
