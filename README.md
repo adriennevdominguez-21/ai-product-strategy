@@ -8,11 +8,11 @@
 
 | Component | Module | Status | Key Artifact |
 |-----------|--------|--------|-------------|
-| **The Bet** | M1 | [x] | `01-the-bet/` |
-| **The Moat** | M2 | [x] | `02-the-moat/` |
-| **The Margin** | M3 | [x] | `03-the-margin/` |
-| **The Contract** | M4 | [x] | `04-the-contract/` |
-| **The Guardrails** | M5 | [x] | `05-the-guardrails/` |
+| **The Bet** | M1 | [Complete] | `01-the-bet/` |
+| **The Moat** | M2 | [Complete] | `02-the-moat/` |
+| **The Margin** | M3 | [Complete] | `03-the-margin/` |
+| **The Contract** | M4 | [Complete] | `04-the-contract/` |
+| **The Guardrails** | M5 | [Complete] | `05-the-guardrails/` |
 | **The Pitch** | M6 | [x] | `06-the-pitch/` |
 
 ---
@@ -23,9 +23,9 @@
 
 - **Product:** An AI-powered decision support platform that helps educators identify attendance risks earlier, automate routine tasks, and recommend timely interventions to improve student outcomes.
 - **AI Value Archetype:** Oracle – Attendance Insight uses AI to analyze attendance and related student data to predict attendance risks, identify emerging trends, and recommend timely interventions that help educators make better decisions.
-- **Vulnerability Scores:** _(add: Moat 4/5 · Data 4/5 · Platform 2/5)_
+- **Vulnerability Scores:** _(Moat 4/5 · Data 4/5 · Platform 2/5)_
 - **Top Risk:** Platform Exposure
-- **Confidence:** _(add: H / M / L)_
+- **Confidence:** _(M)_
 - **Prototype:** [View the prototype](https://k12-attend-ai.lovable.app/)
 - **Kill Criteria:** We would stop investing in this product if the AI consistently fails to improve the accuracy of identifying at-risk students, does not lead to measurable improvements in attendance or intervention outcomes, or if users do not trust or adopt the AI recommendations despite iterative improvements.
 
@@ -98,6 +98,13 @@ Your defense: Build a privacy-preserving federated learning network that allows 
 **Why users will trust a probabilistic system.**
 
 - **Reliability Target:**
+  | Metric | Target | Measurement | Alert Threshold |
+|--------|--------|-------------|-----------------|
+| Accuracy | 90% | Weekly evaluation using a dataset of 300 golden test cases (including adversarial examples), scored with rule-based validation and LLM-as-a-judge. Ship only if overall accuracy is ≥90% and no critical safety tests fail. | <85% → trigger gold-set audit |
+| Hallucination rate | <1% | eekly evaluation on 300 golden test cases using Rule + LLM-as-a-judge to identify unsupported or fabricated claims. | >3% → auto-rollback to last good model |
+| Latency (p95) | <2s | Monitor median response time weekly across production requests. | > 5s → page on-call |
+| Drift velocity | <0.5%/4w | Weekly monitoring of production data against the training dataset using drift detection metrics. | >2%/4w → trigger gold-set audit |
+
 - **Golden Dataset:** 5 rows, 2 adversarial
 - **Confidence UX:**
 - **Approach:** Attendance Insight combines tiered confidence, visible uncertainty, and human-in-the-loop review so educators can understand how reliable each recommendation is and remain responsible for final intervention decisions.
