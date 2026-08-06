@@ -1,4 +1,5 @@
-# An AI-powered decision support platform that helps educators identify attendance risks earlier, automate routine tasks, and recommend timely interventions to improve student outcomes.
+# Attendance Insight
+>An AI-powered decision support platform that helps educators identify attendance risks earlier, automate routine tasks, and recommend timely interventions to improve student outcomes.
 
 > We are building an AI-powered attendance intelligence platform for K–12 school leaders that transforms attendance data into proactive insights and recommendations, enabling earlier interventions to improve student outcomes.
 
