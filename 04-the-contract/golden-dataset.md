@@ -126,7 +126,7 @@ Accept, modify, or dismiss the recommendation; assign an intervention;
 - Users adjust the confidence threshold _(not yet)_
 
 
-## Reliability Contract
+
 
 
 ## Reliability Contract
