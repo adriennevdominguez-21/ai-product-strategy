@@ -88,14 +88,14 @@ Your defense: Build a privacy-preserving federated learning network that allows 
 | **Implied Revenue/User/Month** | **$60.00** |
 
 - **Pricing Today → Tomorrow:** Enterprise SaaS subscription licensed annually by school district. → AI Premium add-on that includes predictive attendance intelligence, intervention recommendations, and district benchmarking.
-- **Total AI COGS / unit:** $19.00
+- **Total AI COGS / unit:** $19.25
 - **Cascading Strategy:** Triage: GPT-4.1 Mini (or equivalent low-cost model); frontier: GPT-5 (or equivalent frontier reasoning model); ratio **80% triage / 20% frontier**
 - **Net Margin Shift:**
 - 
 | Metric | Value |
 |--------|------:|
 | **Δ Margin %** | **+4 percentage points** |
-| **Δ Gross Profit** | **+$11.00 per user/month** |
+| **Δ Gross Profit** | **+$11.75 per user/month** |
 
 - **Break-even at:**
 - 100 AI requests per user per month.
@@ -210,7 +210,7 @@ Accept, modify, or dismiss the recommendation; assign an intervention;
 
 1. Why now: Chronic absenteeism requires earlier and more targeted intervention, while districts now have the data and AI capabilities needed to move from retrospective reporting to proactive decision support.
 2. What's defensible: District-specific policy intelligence, deeply integrated intervention workflows, educator feedback, longitudinal outcomes, and a future privacy-preserving learning network create context and switching costs that general AI tools cannot easily replicate.
-3. The economics: A $45 per-user platform fee plus $0.03 per AI request produces an estimated $60 in monthly revenue against $19 in monthly COGS, increasing gross margin from 64% to 68% and gross profit by $11 per user per month.
+3. The economics: A $45 per-user platform fee plus $0.03 per AI request produces an estimated $60 in monthly revenue against $19.25 in monthly COGS, increasing gross margin from 64% to 68% and gross profit by $11.75 per user per month.
 
 
 - **Ask:**
