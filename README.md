@@ -98,8 +98,9 @@ Your defense: Build a privacy-preserving federated learning network that allows 
 
 **Why users will trust a probabilistic system.**
 
-- **Reliability Target:**
-  | Metric | Target | Measurement | Alert Threshold |
+**Reliability Target:**
+  
+| Metric | Target | Measurement | Alert Threshold |
 |--------|--------|-------------|-----------------|
 | Accuracy | 90% | Weekly evaluation using a dataset of 300 golden test cases (including adversarial examples), scored with rule-based validation and LLM-as-a-judge. Ship only if overall accuracy is ≥90% and no critical safety tests fail. | <85% → trigger gold-set audit |
 | Hallucination rate | <1% | eekly evaluation on 300 golden test cases using Rule + LLM-as-a-judge to identify unsupported or fabricated claims. | >3% → auto-rollback to last good model |
