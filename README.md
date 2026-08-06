@@ -156,7 +156,7 @@ Accept, modify, or dismiss the recommendation; assign an intervention;
 | Creating independent chatbots that answer general attendance-policy questions | Sales call | Pricing gap | L | $100/mo | Ignore |
 
 - **Agent Boundaries:** _Not shipping agents this version._
-- **Regulatory Exposure:** FERPA, COPPA, State student-privacy laws, Title VI and Title IX, Section 504, ADA, and IDEA. Risk tier: high. Controls: Attendance Insight uses role-based access, encryption, audit logs, data minimization, retention limi…
+- **Regulatory Exposure:** ERPA, COPPA, State student-privacy laws, Title VI and Title IX, Section 504, ADA, and IDEA. Risk tier: high. Controls: Attendance Insight uses role-based access, encryption, audit logs, data minimization, retention limits, vendor controls, and FERPA-compliant handling of student records. It also requires human approval for consequential decisions, monitors accuracy and demographic performance, supports corrections and appeals, and prohibits fully automated disciplinary, legal, enrollment, or accommodation decisions.
 
 → Details: [`05-the-guardrails/`](05-the-guardrails/)
 
@@ -203,7 +203,10 @@ Accept, modify, or dismiss the recommendation; assign an intervention;
 3. The economics: A $45 per-user platform fee plus $0.03 per AI request produces an estimated $60 in monthly revenue against $19 in monthly COGS, increasing gross margin from 64% to 68% and gross profit by $11 per user per month.
 
 
-- **Ask:** ## M1 Baseline vs. Now
+- **Ask:**
+Approve $1.8 million and eight dedicated employees for 12 months, with a 90-day release gate, to complete the reliability foundation, integrate district data, and run pilots with two to three districts. The team will include one product manager, two ML engineers or data scientists, two full-stack engineers, one data-integration engineer, one MLOps and security engineer, and one education implementation and research lead. Funding this means pausing native multilingual outreach and other non-core chatbot or custom-dashboard work, using partners where necessary, and withholding investment in federated learning until the pilots validate outcomes and demand.
+
+- ## M1 Baseline vs. Now
 
 *Your 3-sentence AI strategy from Module 1 vs. what you'd say now:*
 
