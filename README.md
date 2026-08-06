@@ -113,10 +113,10 @@ Your defense: Build a privacy-preserving federated learning network that allows 
   
 | Metric | Target | Measurement | Alert Threshold |
 |--------|--------|-------------|-----------------|
-| Accuracy | 90% | Weekly evaluation using a dataset of 300 golden test cases (including adversarial examples), scored with rule-based validation and LLM-as-a-judge. Ship only if overall accuracy is ≥90% and no critical safety tests fail. | <85% → trigger gold-set audit |
+| Accuracy | 90% | Weekly evaluation using a dataset of 300 golden test cases (including adversarial examples), scored with rule-based validation and LLM-as-a-judge. Ship only if overall accuracy is ≥90% and no critical safety tests fail. | <85% → trigger golden dataset audit |
 | Hallucination rate | <1% | eekly evaluation on 300 golden test cases using Rule + LLM-as-a-judge to identify unsupported or fabricated claims. | >3% → auto-rollback to last good model |
 | Latency (p95) | <2s | Monitor median response time weekly across production requests. | > 5s → page on-call |
-| Drift velocity | <0.5%/4w | Weekly monitoring of production data against the training dataset using drift detection metrics. | >2%/4w → trigger gold-set audit |
+| Drift velocity | <0.5%/4w | Weekly monitoring of production data against the training dataset using drift detection metrics. | >2%/4w → trigger golden dataset audit |
 
 - **Golden Dataset:** 5 rows, 2 adversarial
 - **Confidence UX:** Attendance Insight combines tiered confidence, visible uncertainty, and human-in-the-loop review so educators can understand the reliability of each recommendation and remain responsible for final intervention decisions.
@@ -150,7 +150,7 @@ Accept, modify, or dismiss the recommendation; assign an intervention;
 **Compounding System:** 
 | Loop | Input | Output | Compounds? | Status |
 |------|-------|--------|-----------|--------|
-| Recursive Learning | Educator acceptance, modification, or rejection of AI recommendations; intervention selections; intervention outcomes; attendance improvements; corrected risk classifications; and reviewer feedback | Better risk predictions, more relevant intervention recommendations, improved confidence calibration, expanded golden-dataset coverage, and stronger personalization to district workflows. | Y | active |
+| Recursive Learning | Educator acceptance, modification, or rejection of AI recommendations; intervention selections; intervention outcomes; attendance improvements; corrected risk classifications; and reviewer feedback | Better risk predictions, more relevant intervention recommendations, improved confidence calibration, expanded golden dataset coverage, and stronger personalization to district workflows. | Y | active |
 | Cross-Domain Transfer | Attendance history combined with grades, behavior incidents, enrollment data, demographics, intervention history, school-level trends, and district attendance policies. | More contextual risk assessments, identification of relationships across student outcomes, improved recommendations across schools and grade levels, and earlier detection of emerging attendance risks. | Y | active |
 | Network Intelligence | Privacy-preserving and anonymized attendance patterns, intervention outcomes, benchmarks, and educator feedback contributed by multiple districts. | anonymized attendance patterns, intervention outcomes, benchmarks, and educator feedback contributed by multiple districts.Cross-district benchmarks, broader pattern recognition, identification of effective interventions across comparable student populations, and improved predictions for every participating district. | Y | broken |
 
