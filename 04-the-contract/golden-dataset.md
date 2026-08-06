@@ -149,3 +149,4 @@ Accept, modify, or dismiss the recommendation; assign an intervention;
 
 ## Red-Team Findings
 *What failure mode did your partner find that you missed?*
+My partner found that Attendance Insight could treat excused and unexcused absences the same, causing students with legitimate medical, disability-related, or approved absences to be incorrectly classified as high risk. Our original golden dataset missed this failure because it tested absence counts without including absence type or accommodation context.
