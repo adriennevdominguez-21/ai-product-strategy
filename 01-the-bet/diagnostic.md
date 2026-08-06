@@ -17,7 +17,7 @@ I am responsible for defining the AI product strategy, prioritizing investments,
 *Workflow depth × switching cost. Would users leave in a weekend if a competitor showed up?*
 
 **Score rationale:**
-Attendance Insight has several layers of context that are difficult for competitors to replicate such as district-specific attendance policies, historical attendance patterns, integration with the Student Information System, user workflow context ad institutionl knowledge about how schools respond to attendance issues. 
+Attendance Insight has several layers of context that are difficult for competitors to replicate such as district-specific attendance policies, historical attendance patterns, integration with the Student Information System, user workflow context and institutionl knowledge about how schools respond to attendance issues. 
 
 **Named attacker (from partner challenge):**
 PowerSchool
