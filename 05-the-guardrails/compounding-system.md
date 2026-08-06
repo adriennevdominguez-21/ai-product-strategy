@@ -5,7 +5,7 @@
 |------|-------|--------|-----------|--------|
 | Recursive Learning | Educator acceptance, modification, or rejection of AI recommendations; intervention selections; intervention outcomes; attendance improvements; corrected risk classifications; and reviewer feedback | Better risk predictions, more relevant intervention recommendations, improved confidence calibration, expanded golden-dataset coverage, and stronger personalization to district workflows. | Y | active |
 | Cross-Domain Transfer | Attendance history combined with grades, behavior incidents, enrollment data, demographics, intervention history, school-level trends, and district attendance policies. | More contextual risk assessments, identification of relationships across student outcomes, improved recommendations across schools and grade levels, and earlier detection of emerging attendance risks. | Y | active |
-| Network Intelligence | Privacy-preserving and anonymized attendance patterns, intervention outcomes, benchmarks, and educator feedback contributed by multiple districts. | anonymized attendance patterns, intervention outcomes, benchmarks, and educator feedback contributed by multiple districts.Cross-district benchmarks, broader pattern recognition, identification of effective interventions across comparable student populations, and improved predictions for every participating district. | Y | broken |
+| Network Intelligence | Privacy-preserving and anonymized attendance patterns, intervention outcomes, benchmarks, and educator feedback contributed by multiple districts. | Cross-district benchmarks, broader pattern recognition, identification of effective interventions across comparable student populations, and improved predictions for participating districts. | Y | Broken |
 
 **Broken loop identified by partner:** Network intelligence—attendance patterns and intervention outcomes are collected across districts but are not fed into a centralized, privacy-preserving intelligence layer.
 
@@ -25,7 +25,13 @@
 
 **Scope:** AI features within Attendance Insight, including attendance-risk predictions, intervention recommendations, confidence scores, explanations, prioritized alerts, automated summaries, and the conversational attendance assistant. It also covers educator review, corrections, feedback collection, model evaluation, and the use of student data to produce these outputs. Excludes: Traditional attendance reporting, non-AI workflow tools, internal-only analytics dashboards, SIS data-entry processes, and final disciplinary or legal decisions. These areas are governed by separate district data, security, student-discipline, and FERPA policies.
 
-**Autonomy boundaries:** Generate summaries, detect attendance trends, prioritize dashboard alerts, calculate risk indicators, and recommend possible interventions., auto. Contact families, assign interventions, create attendance improvement plans, refer students to counselors, or update official student records—even when AI confidence is high., human approval required. Make disciplinary decisions, determine truancy or legal action, change enrollment status, deny student services, or make decisions based solely on protected characteristics., never auto.
+**Autonomy Boundaries:**
+
+| Level | Decisions | Decision-Maker |
+|---|---|---|
+| 🟢 Auto | Generate summaries, detect attendance trends, prioritize dashboard alerts, calculate risk indicators, and recommend possible interventions. | AI, with outputs logged and visible to authorized educators. |
+| 🟡 Human Approval | Contact families, assign interventions, create attendance improvement plans, refer students to counselors, or update official student records—even when AI confidence is high. | Authorized educator, attendance coordinator, counselor, or district administrator. |
+| 🔴 Never Auto | Make disciplinary decisions, determine truancy or legal action, change enrollment status, deny services or accommodations, or act solely on protected characteristics. | Authorized school or district personnel following applicable policy and law. |
 
 **Escalation triggers:** 
 1. AI confidence is below 60%. 
@@ -34,16 +40,15 @@
 4. The recommendation could lead to disciplinary, truancy, enrollment, or legal action. 
 5. The case involves special education, Section 504, language-access, or accommodation requirements.
 
-**Audit cadence:** 
-Weekly, AI confidence is below 60%. Source data contains missing, conflicting, duplicate, or delayed records. The recommendation involves family contact, counselor referral, an attendance improvement plan, or an official-record change. The recommendation could lead to disciplinary, truancy, enrollment, or legal action. The case involves special education, Section 504, language-access, or accommodation requirements. (AI product and engineering teams). 
 
-Monthly, Human overrides, rejected recommendations, intervention outcomes, and data-quality issues (Product owner, attendance coordinators, and data team). 
+**Audit Cadence:**
 
-Quarterly, Bias across demographic groups, confidence calibration, policy compliance, and model drift (Governance committee and district administrators). 
-
-Quarterly, Overall student impact, FERPA compliance, vendor risk, security controls, and whether the AI should continue operating (District leadership, Legal).
-
-Quarterly, Shadow AI audit to review whether staff paste attendance records, student PII, intervention notes into external AI tools. Unapproved models, browser extensions, personal accounts and exported datasets. Any incidents involving unauthorized disclosure, inaccurate recommendations, or actions taken without human approval. 
+| Frequency | What We Review | Who Reviews It |
+|---|---|---|
+| Weekly | Accuracy, hallucination rate, p95 latency, drift, failed safety tests, escalated cases, and data-quality failures. | AI product, engineering, and evaluation teams |
+| Monthly | Human overrides, rejected recommendations, intervention outcomes, user feedback, and recurring data-quality issues. | Product owner, attendance coordinators, and data team |
+| Quarterly | Demographic performance, confidence calibration, policy compliance, model changes, vendor risk, and Shadow AI usage. | AI governance committee, district administrators, privacy, and legal teams |
+| Annually | Student impact, FERPA compliance, security controls, retention practices, vendor agreements, and whether the AI should continue operating. | District leadership, privacy officer, legal counsel, and an independent reviewer where required |
 
 **Regulatory exposure (EU AI Act / other):** FERPA, COPPA, State student-privacy laws, Title VI and Title IX, Section 504, ADA, and IDEA. Risk tier: high. Controls: Attendance Insight uses role-based access, encryption, audit logs, data minimization, retention limits, vendor controls, and FERPA-compliant handling of student records. It also requires human approval for consequential decisions, monitors accuracy and demographic performance, supports corrections and appeals, and prohibits fully automated disciplinary, legal, enrollment, or accommodation decisions.
 
