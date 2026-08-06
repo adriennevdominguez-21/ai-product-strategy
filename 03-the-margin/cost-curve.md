@@ -2,19 +2,19 @@
 
 ---
 
-# Leader–Filler–Killer Framework
+## Leader–Filler–Killer Framework
 
-## Leader
+### Leader
 **AI-powered attendance intelligence** that predicts student attendance risk, explains contributing factors, and recommends timely, evidence-based interventions to help educators improve student outcomes.
 
-## Filler
+### Filler
 - AI-generated summaries of district, school, and student attendance trends
 - Natural language explanations of attendance risk scores
 - Dashboard insights and prioritized alerts
 - Suggested intervention plans and follow-up reminders
 - Conversational AI assistant for attendance-related questions
 
-## Killer
+### Killer
 - Predictive risk modeling using attendance, grades, behavior, demographics, and intervention history
 - Explainable AI that identifies key drivers behind attendance risk
 - Privacy-preserving federated learning that continuously improves predictions across districts without exposing student data
