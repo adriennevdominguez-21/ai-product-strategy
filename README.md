@@ -144,12 +144,9 @@ Accept, modify, or dismiss the recommendation; assign an intervention;
 | Recursive Learning | Educator acceptance, modification, or rejection of AI recommendations; intervention selections; intervention outcomes; attendance improvements; corrected risk classifications; and reviewer feedback | Better risk predictions, more relevant intervention recommendations, improved confidence calibration, expanded golden-dataset coverage, and stronger personalization to district workflows. | Y | active |
 | Cross-Domain Transfer | Attendance history combined with grades, behavior incidents, enrollment data, demographics, intervention history, school-level trends, and district attendance policies. | More contextual risk assessments, identification of relationships across student outcomes, improved recommendations across schools and grade levels, and earlier detection of emerging attendance risks. | Y | active |
 | Network Intelligence | Privacy-preserving and anonymized attendance patterns, intervention outcomes, benchmarks, and educator feedback contributed by multiple districts. | anonymized attendance patterns, intervention outcomes, benchmarks, and educator feedback contributed by multiple districts.Cross-district benchmarks, broader pattern recognition, identification of effective interventions across comparable student populations, and improved predictions for every participating district. | Y | broken |
-- **Governance Posture:** AI features within Attendance Insight, including attendance-risk predictions, intervention recommendations, confidence scores, explanations, prioritized alerts, automated summaries, and the conversational attendance assi…
-- **Autonomy Boundaries:** Generate summaries, detect attendance trends, prioritize dashboard alerts, calculate risk indicators, and recommend possible interventions., auto.…
-- **Escalation Triggers:** 1. AI confidence is below 60%.
-- **Audit Cadence:** Weekly, AI confidence is below 60%. Source data contains missing, conflicting, duplicate, or delayed records.…
-- **Shadow AI Audit (user-side):**
-  
+
+## Shadow AI Audit
+ 
 | Workaround | Signal Source | Signal Type | Frequency | Spend ($/mo) | Decision |
 |---|---|---|---|---:|---|
 | Exporting attendance data into general-purpose AI tools to create student and school summaries | User interview | Capability gap | H | $100/mo | Build |
