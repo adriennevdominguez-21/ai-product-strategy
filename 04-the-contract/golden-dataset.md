@@ -106,8 +106,6 @@
 
 ## Confidence UX Design
 
-## Confidence UX Design
-
 **Approach:** Attendance Insight combines tiered confidence, visible uncertainty, and human-in-the-loop review so educators can understand how reliable each recommendation is and remain responsible for final intervention decisions.
 
 **Confident (>90%):** Generates a risk classification, explains the strongest contributing factors, and recommends a prioritized intervention.
