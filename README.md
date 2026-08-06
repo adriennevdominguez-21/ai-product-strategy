@@ -119,6 +119,7 @@ Accept, modify, or dismiss the recommendation; assign an intervention;
 - 
 - **HITL Architecture:** **Trigger:** Human review is triggered for predictions with confidence below 60% or any high-impact student intervention recommendation.
 - **Failure Mode Coverage:** *What failure mode did your partner find that you missed?*
+- My partner found that Attendance Insight could treat excused and unexcused absences the same, causing students with legitimate medical, disability-related, or approved absences to be incorrectly classified as high risk. Our original golden dataset missed this failure because it tested absence counts without including absence type or accommodation context.
 
 → Details: [`04-the-contract/`](04-the-contract/)
 
