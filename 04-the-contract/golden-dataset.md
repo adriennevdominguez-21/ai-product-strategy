@@ -133,7 +133,7 @@ Accept, modify, or dismiss the recommendation; assign an intervention;
 
 | Metric | Target | Measurement | Alert Threshold |
 |--------|--------|-------------|-----------------|
-| Accuracy | 90% | Weekly evaluation using a dataset of 300 golden test cases (including adversarial examples), scored with rule-based validation and LLM-as-a-judge. Ship only if overall accuracy is ≥90% and no critical safety tests fail. | <85% → trigger gold-set audit |
+| Accuracy | 90% | Current: 5 cases. Production Target: Weekly evaluation using a dataset of 300 golden test cases (including adversarial examples), scored with rule-based validation and LLM-as-a-judge. Ship only if overall accuracy is ≥90% and no critical safety tests fail. | <85% → trigger gold-set audit |
 | Hallucination rate | <1% | eekly evaluation on 300 golden test cases using Rule + LLM-as-a-judge to identify unsupported or fabricated claims. | >3% → auto-rollback to last good model |
 | Latency (p95) | <2s | Monitor median response time weekly across production requests. | > 5s → page on-call |
 | Drift velocity | <0.5%/4w | Weekly monitoring of production data against the training dataset using drift detection metrics. | >2%/4w → trigger gold-set audit |
