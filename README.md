@@ -26,7 +26,7 @@
 - **AI Value Archetype:** Oracle – Attendance Insight uses AI to analyze attendance and related student data to predict attendance risks, identify emerging trends, and recommend timely interventions that help educators make better decisions.
 - **Vulnerability Scores:** _(Moat 4/5 · Data 4/5 · Platform 2/5)_
 - **Top Risk:** Platform Exposure
-- **Confidence:** _(M)_
+- **Confidence:** Medium
 - **Prototype:** [View the prototype](https://k12-attend-ai.lovable.app/)
 - **Kill Criteria:**
 
